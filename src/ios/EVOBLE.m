@@ -991,7 +991,7 @@ static int EVOPerhiperalAssociatedObjectKey = 42;
 	NSString* address = [command.arguments objectAtIndex: 0];
 
 	// Check that address was given.
-	if (nil == address)
+    if (address == nil || [address.class isSubclassOfClass: NSNull.class])
 	{
 		// Pass back error message.
 		[self
