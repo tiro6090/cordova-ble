@@ -1697,7 +1697,7 @@ static int EVOPerhiperalAssociatedObjectKey = 42;
 	[self.central stopScan];
 
 	// Remove the EvoPeripheral and disconnect its associated peripheral.
-	for (id key in self.peripherals)
+    for (id key in self.peripherals.copy)
 	{
 		EVOPeripheral* evoPerhiperal = [self.peripherals objectForKey: key];
 		[self freePeripheral: evoPerhiperal.peripheral disconnect: YES];
