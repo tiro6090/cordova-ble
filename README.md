@@ -17,6 +17,11 @@ Available functionality:
 Install using the Apache Cordova command line:
 
     cordova plugin add cordova-plugin-ble
+    
+For meteor do:
+
+    meteor add cordova:cordova-plugin-ble@https://github.com/tiro6090/cordova-ble.git#00c7bbbd8d6fff9d2e10f3c8934fae02ed36ca24
+
 
 ## Updated BLE Plugin API
 
